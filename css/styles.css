@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10%;
+}
+
+nav li {
+    padding: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    text-align: left;
+    padding-top: 60px;
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.intro {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.text-content {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.text-content h2{
+    text-align: center;
+}
+.text-content h4{
+    text-align: center;
+}
+.text-content h5{
+    text-align: center;
+}
+
+.indent {
+    text-indent: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+
+
+.contact a, .contact p {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.contact a:hover, .contact a:focus {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.profile-wrap {
+    text-align: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tuneit {
+    text-align: center;
+    padding: 20px;
+}
+
+.tech-icons-container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.tech-icon {
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+@keyframes scroll-left-right {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-25%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(25%);
+    }
+}
+
+.tech-icons-container {
+    animation: scroll-left-right 15s linear infinite;
+}
+
+#graph-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
