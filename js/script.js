@@ -74,7 +74,6 @@ function loadGraphForCurrentPage() {
     }
 }
 
-// Modify the DOMContentLoaded listener to also load graphs
 window.addEventListener('DOMContentLoaded', () => {
     loadIconsForCurrentPage();
     loadGraphForCurrentPage();
