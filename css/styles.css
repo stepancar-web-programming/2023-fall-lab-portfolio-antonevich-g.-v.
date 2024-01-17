@@ -4,17 +4,23 @@
     box-sizing: border-box;
 }
 
+
 body, html {
-    height: 100%;
     font-family: 'Arial', sans-serif;
     font-size: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     background-color: #333;
     color: white;
     padding: 10px 0;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -41,11 +47,13 @@ nav a {
 main {
     text-align: left;
     padding-top: 60px;
+    padding-bottom: 80px;
     height: calc(100% - 60px);
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-bottom: 80px;
+    flex: 1;
+    justify-content: center;
 }
 
 .intro {
@@ -59,13 +67,15 @@ main {
     margin-left: 20px;
 }
 
-.text-content h2{
+.text-content h2 {
     text-align: center;
 }
-.text-content h4{
+
+.text-content h4 {
     text-align: center;
 }
-.text-content h5{
+
+.text-content h5 {
     text-align: center;
 }
 
@@ -79,7 +89,6 @@ ul {
 }
 
 
-
 .contact a, .contact p {
     color: white;
     margin: 0 10px;
@@ -91,18 +100,13 @@ ul {
 }
 
 footer {
+    padding: 10px 0;
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: 18px;
+    position: relative;
+    z-index: 10;
 }
 
 .profile-wrap {
@@ -123,41 +127,75 @@ footer {
 
 .tech-icons-container {
     display: flex;
-    align-items: center;
-    white-space: nowrap;
-    position: relative;
-    overflow: hidden;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
     padding: 10px 0;
 }
 
+
 .tech-icon {
-    margin-right: 20px;
-    flex-shrink: 0;
+    flex: 1;
+    height: auto;
+    margin: 5px;
 }
 
-@keyframes scroll-left-right {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(-25%);
-    }
-    50% {
-        transform: translateX(0);
-    }
-    75% {
-        transform: translateX(25%);
-    }
+
+.icon-row {
+    display: flex;
+    justify-content: space-around;
 }
 
-.tech-icons-container {
-    animation: scroll-left-right 15s linear infinite;
-}
 
 #graph-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
+    max-height: 300px;
+    margin-bottom: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+    body, html {
+        font-size: 14px;
+    }
+
+    header, footer {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav li {
+        padding: 10px;
+    }
+
+    main {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .intro {
+        padding: 15px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact a, .contact p {
+        margin: 5px 0;
+    }
 }

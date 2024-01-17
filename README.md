@@ -1,1 +1,1 @@
-[Click](http://193.149.185.66/index.html)
+[Click](http://193.149.185.66/html/index.html)
