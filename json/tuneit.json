@@ -1,0 +1,26 @@
+{
+  "icons": [
+    "linux",
+    "docker",
+    "python",
+    "django",
+    "django_rest",
+    "postgres"
+  ],
+  "graph": {
+    "type": "bar",
+    "data": {
+      "x": [
+        "До устройства",
+        "После устройства"
+      ],
+      "y": [
+        3.1,
+        4.9
+      ]
+    },
+    "layout": {
+      "title": "Средний балл в ИТМО"
+    }
+  }
+}

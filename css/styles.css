@@ -10,6 +10,10 @@ body, html {
     font-size: 20px;
 }
 
+html {
+    height: -webkit-fill-available;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -151,7 +155,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 300px;
+    max-height: 500px;
     margin-bottom: 1px;
 }
 
@@ -197,5 +201,9 @@ footer {
 
     .contact a, .contact p {
         margin: 5px 0;
+    }
+
+    #graph-container {
+        max-height: 300px;
     }
 }

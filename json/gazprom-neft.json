@@ -1,0 +1,38 @@
+{
+  "icons": [
+    "linux",
+    "kuber",
+    "python",
+    "fastapi",
+    "swagger",
+    "postgres",
+    "mongodb",
+    "redis",
+    "numpy",
+    "pandas"
+  ],
+  "graph": {
+    "type": "scatter",
+    "data": {
+      "x": [
+        "Май (Устроился)",
+        "Июнь",
+        "Июль",
+        "Август",
+        "Сентябрь",
+        "..."
+      ],
+      "y": [
+        100,
+        150,
+        130,
+        170,
+        210,
+        420
+      ]
+    },
+    "layout": {
+      "title": "Акции газпрома"
+    }
+  }
+}
