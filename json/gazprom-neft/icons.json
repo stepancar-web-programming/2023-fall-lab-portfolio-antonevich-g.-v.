@@ -1,0 +1,14 @@
+{
+  "icons": [
+    "linux",
+    "kuber",
+    "python",
+    "fastapi",
+    "swagger",
+    "postgres",
+    "mongodb",
+    "redis",
+    "numpy",
+    "pandas"
+  ]
+}

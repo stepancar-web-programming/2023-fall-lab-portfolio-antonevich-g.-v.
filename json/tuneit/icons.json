@@ -1,0 +1,10 @@
+{
+  "icons": [
+    "linux",
+    "docker",
+    "python",
+    "django",
+    "django_rest",
+    "postgres"
+  ]
+}
